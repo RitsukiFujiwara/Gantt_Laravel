@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/data', 'App\Http\Controllers\GanttController@get');
+Route::resource('task', 'App\Http\Controllers\TaskController');
+Route::resource('link', 'App\Http\Controllers\LinkController');

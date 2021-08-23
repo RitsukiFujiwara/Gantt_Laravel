@@ -23,5 +23,8 @@
     gantt.config.date_format = "%Y-%m-%d %H:%i:%s";
     gantt.init("gantt_here");
     gantt.load("/api/data");
+    var dp = new gantt.dataProcessor("/api");
+    dp.init(gantt);
+    dp.setTransactionMode("REST");
 </script>
 </body>
